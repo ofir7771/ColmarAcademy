@@ -1,10 +1,11 @@
 html {
   font-size: 16px;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
   width: 80%;
   margin: 0 auto;
+  font-size: 16px;
 }
 h1, h2, h3, h4 {
   color: #4a4a4a;
@@ -70,9 +71,12 @@ ul li {
 .text-container {
   display: flex;
   font-family: Roboto;
-  width: 40%;
+  max-width: 40%;
+  max-height: 50%;
   flex-direction: column;
-  background-color: red;
+  border: 1px solid red;
+  text-align: left;
+  margin: auto 24px;
 }
 .img-container {
   border: 1px solid deeppink;
@@ -84,6 +88,27 @@ ul li {
   width: 100%;
 }
 h1 {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 3rem;
+  max-width: 80%;
+}
+h2 {
+  display: flex;
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.button {
+  text-align: center;
+  background-color: #4a4a4a;
+  width: 75%;
+  border: 1px solid aqua;
+  padding: 1rem;
+}
+.button a {
+  color: white;
+  font-size: 1rem;
 }
