@@ -1,17 +1,32 @@
 html {
   font-size: 16px;
-    box-sizing: border-box;
 }
 body {
   width: 80%;
   margin: 0 auto;
   font-size: 16px;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   color: #4a4a4a;
 }
-p {
-  color: #d8d8d8;
+a {
+ color: white;
+}
+h1 {
+  /* font-size: 3.2em;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  line-height: 1.2em;  */
+  font-size: 280%;
+  font-weight: bold;
+}
+h2 {
+  /*  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+  line-height: 1.2em; */
+  font-size: 150%;
+  font-weight: bold;
 }
 main {
   display: flex;
@@ -60,55 +75,152 @@ ul li {
   font-size: 1.1rem;
   margin: 0 8px;
 }
-/*  end header - starting banner  */
-.banner {
+/*  end header - starting 1st container  */
+.container {
   display: flex;
   border: 2px solid blue;
   width: 100%;
   align-items: center;
+  font-family: Roboto, sans-serif;
   background-color: #d8d8d8;
+}
+.left {    /*  sections  */
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  border: 1px dashed lime;
+}
+.right {    /*  sections  */
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  border: 1px dashed orange;
 }
 .text-container {
   display: flex;
-  font-family: Roboto;
-  max-width: 40%;
-  max-height: 50%;
   flex-direction: column;
   border: 1px solid red;
   text-align: left;
-  margin: auto 24px;
+  margin: auto 12px;
+  max-height: 20rem;
+  width: 85%;
 }
 .img-container {
   border: 1px solid deeppink;
   margin: 32px 24px;
-  width: 60%;
+  max-width: 100%;
+  display: block;
 }
 .img-container img {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
-h1 {
-  display: flex;
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  line-height: 3rem;
-  max-width: 80%;
+
+.text-container h1 {
+  line-height: 120%;
+  margin-bottom: 7%;
+  border: 1px solid green;
 }
-h2 {
-  display: flex;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+.text-container h2 {
+  line-height: 120%;
+  margin-bottom: 7%;
+  border: 1px dashed green;
 }
 .button {
   text-align: center;
   background-color: #4a4a4a;
-  width: 75%;
+  width: 80%;
   border: 1px solid aqua;
   padding: 1rem;
 }
-.button a {
-  color: white;
-  font-size: 1rem;
+/*  end 1st container - starting 2nd container  */
+.about-us {
+  background-color: white;
+}
+.about-us .left h1 {
+  font-size: 250%;
+  line-height: 100%;
+  border: 1px solid green;
+  margin: 0 24px 24px 24px;
+}
+.about-us .left p {
+  line-height: 150%;
+  border: 1px solid green;
+  margin: 0 24px 24px 24px;
+  font-size: 1.15rem;
+}
+.about-us .author {
+  margin: 0 24px 32px 24px;
+  border: 1px solid red;
+}
+.about-us .right {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.side-box {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border: 2px dashed red;
+}
+.img-box {
+  width: 35%;
+  margin: 16px;
+  border: 1px solid aqua;
+}
+.img-box img {
+  width: 100%;
+}
+.text-box {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 150%;
+  border: 1px dashed yellow;
+}
+.text-box h2,
+.text-box p,
+.text-box span {
+  padding-bottom: 8px;
+}
+.text-box a {
+  color: #37b6ee;
+}
+/*  starting 3rd section "programs"  */
+.programs {
+  display: flex;
+  flex-direction: column;
+}
+.programs h1 {
+  display: flex;
+  margin: 32px auto;
+  border: 1px solid green;
+}
+.p-box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 72px;
+  border: 1px solid red;
+}
+.p-box {
+  width: 30%;
+  height: 375px;
+  border: 2px dashed turquoise;
+  background-color: white;
+  margin-bottom: 32px;
+}
+.p-box img {
+  width: 100%;
+}
+.p-box h2, .p-box p {
+  padding: 8px 0;
+  margin: 8px 16px;
+}
+.p-box p {
+  color: #929292;
+  line-height: 150%;
 }
