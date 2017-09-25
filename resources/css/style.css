@@ -1,3 +1,6 @@
+/*  the webpage is divided to "header", "main", "footer"  */
+/*  there are 4 sections to the "main" tag, each is designed with a tag of "article"  */
+
 html {
   font-size: 16px;
 }
@@ -19,6 +22,7 @@ h1 {
   line-height: 1.2em;  */
   font-size: 280%;
   font-weight: bold;
+  line-height: 120%;
 }
 h2 {
   /*  font-size: 1.75em;
@@ -27,6 +31,7 @@ h2 {
   line-height: 1.2em; */
   font-size: 150%;
   font-weight: bold;
+  line-height: 120%;
 }
 main {
   display: flex;
@@ -80,7 +85,7 @@ ul li {
   display: flex;
   border: 2px solid blue;
   width: 100%;
-  align-items: center;
+  /* align-items: center;  (check if necessary)*/
   font-family: Roboto, sans-serif;
   background-color: #d8d8d8;
 }
@@ -111,18 +116,17 @@ ul li {
   max-width: 100%;
   display: block;
 }
-.img-container img {
+.img-container img,
+.img-container video {
   display: block;
   width: 100%;
 }
 
 .text-container h1 {
-  line-height: 120%;
   margin-bottom: 7%;
   border: 1px solid green;
 }
 .text-container h2 {
-  line-height: 120%;
   margin-bottom: 7%;
   border: 1px dashed green;
 }
@@ -137,13 +141,13 @@ ul li {
 .about-us {
   background-color: white;
 }
-.about-us .left h1 {
+.left h1 {
   font-size: 250%;
   line-height: 100%;
   border: 1px solid green;
   margin: 0 24px 24px 24px;
 }
-.about-us .left p {
+.left p {
   line-height: 150%;
   border: 1px solid green;
   margin: 0 24px 24px 24px;
@@ -223,4 +227,8 @@ ul li {
 .p-box p {
   color: #929292;
   line-height: 150%;
+}
+/*  starting 4th section "exhibit"  */
+.exhibit {
+  background-color: white;
 }
