@@ -346,6 +346,17 @@ header {
 /*  starting 4th section "exhibit"  */
 #exhibit {
   background-color: white;
+  flex-direction: column;
+}
+#exhibit h1 {
+  margin: 32px auto;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+#exhibit h2 {
+  margin: 0 0 24px 24px;
 }
 footer {
   display: flex;
