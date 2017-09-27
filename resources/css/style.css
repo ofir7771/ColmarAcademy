@@ -111,6 +111,8 @@ header {
   }
   #about-us, #programs {
     width: 85%;
+    flex-direction: column;
+    background-color: white;
   }
   #banner,          /*  targeting "banner" section  */
   #banner .left,
@@ -126,7 +128,7 @@ header {
     line-height: 100%;
     margin-bottom: 4%;
   }
-  #banner h2 {
+  h2 {
     font-size: 120%;
     margin-bottom: 5%;
   }
@@ -165,6 +167,23 @@ header {
   }
   #about-us .img-box img{
       width: 100%;
+  }
+  #programs h1 {           /*  targeting ".programs" section  */
+    font-size: 200%;
+    margin: 0;
+  }
+  #programs .p-box-container {
+    margin: 8px 0 16px 0;;
+    width: 100%;
+  }
+  .p-box p, .p-box img {
+    display: none;
+  }
+  #programs .p-box {
+    width: 100%;
+    height: 100%;
+    margin: 8px 0;
+    background-color: lightgray;
   }
 }
 /*  end header - starting 1st container  */
