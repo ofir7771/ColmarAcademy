@@ -1,6 +1,6 @@
 /*  the webpage is divided to "header", "main", "footer"  */
-/*  there are 4 sections to the "main" tag, each is designed with a tag of "article"  */
-
+/*  there are 4 sections to the "main" tag, each is designed with a tag of "article" */
+/*  these are the 4 sections: (1).banner (2).about-us (3).programs (4).exhibit  */
 html {
   font-size: 16px;
 }
@@ -82,7 +82,10 @@ header {
 }
 /*  media queries for phone size screens   */
 @media only screen and (max-width:470px) {
-  .site-title,
+  body {
+    width: 100%;
+  }
+  .site-title,    /*  targeting "header" section  */
   .desktop     {
     display: none;
   }
@@ -98,6 +101,70 @@ header {
   }
   .phone img {
     width: 120%;
+  }
+  .container, #exhibit {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+  }
+  #about-us, #programs {
+    width: 85%;
+  }
+  #banner,          /*  targeting "banner" section  */
+  #banner .left,
+  #banner .right,
+  #banner .left .img-container {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+  #banner h1 {
+    font-size: 220%;
+    line-height: 100%;
+    margin-bottom: 4%;
+  }
+  #banner h2 {
+    font-size: 120%;
+    margin-bottom: 5%;
+  }
+  #banner .right .text-container {
+    width: 85%;
+    align-self: center;
+    margin: 32px 0;
+  }
+  #banner .right .button {
+    width: 100%;
+  }
+  #about-us .left {        /*  targeting "about-us" section  */
+    display: none;
+  }
+  #about-us .right {
+    width: 100%;
+  }
+  #about-us .side-box {
+    flex-direction: column;
+    width: 100%;
+    margin: 16px 0 16px 0;
+  }
+  .img-box img:first-child {
+    display: none;
+  }
+#about-us .img-box img:nth-child(2n+0),
+  #about-us .img-box,
+    #about-us .text-box {
+    width: 100%;
+    margin: 0;
+    display: block;
+    border: 1px dashed lime;
+  }
+  #about-us .text-box {
+    margin: 15px 0 0 8px;
+  }
+  #about-us .img-box img{
+      width: 100%;
   }
 }
 /*  end header - starting 1st container  */
@@ -162,8 +229,8 @@ header {
   border: 1px solid lightgray;
   padding: 1rem;
 }
-/*  end 1st container - starting 2nd container  */
-.about-us {
+/*  end 1st container - starting 2nd container ".about-us" */
+#about-us {
   background-color: white;
 }
 .left h1 {
@@ -178,11 +245,11 @@ header {
   margin: 0 24px 24px 24px;
   font-size: 1.15rem;
 }
-.about-us .author {
+#about-us .author {
   margin: 0 24px 32px 24px;
   border: 1px solid red;
 }
-.about-us .right {
+#about-us .right {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
@@ -200,6 +267,9 @@ header {
 }
 .img-box img {
   width: 100%;
+}
+.img-box img:nth-child(2n+0) {
+  display: none;
 }
 .text-box {
   width: 65%;
@@ -219,11 +289,11 @@ header {
   color: #37b6ee;
 }
 /*  starting 3rd section "programs"  */
-.programs {
+#programs {
   display: flex;
   flex-direction: column;
 }
-.programs h1 {
+#programs h1 {
   display: flex;
   margin: 32px auto;
   border: 1px solid green;
@@ -237,6 +307,7 @@ header {
 }
 .p-box {
   width: 30%;
+  min-width: 200px;
   height: 375px;
   border: 2px dashed turquoise;
   background-color: white;
@@ -254,7 +325,7 @@ header {
   line-height: 150%;
 }
 /*  starting 4th section "exhibit"  */
-.exhibit {
+#exhibit {
   background-color: white;
 }
 footer {
