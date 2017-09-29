@@ -314,6 +314,12 @@ footer span:hover {
   .phone img {
     width: 120%;
   }
+  .phone li:hover {
+    width: 8%;
+  }
+  .phone li:active {
+    width: 6%;
+  }
   .container, #exhibit {
     width: 100%;
     height: 100%;
