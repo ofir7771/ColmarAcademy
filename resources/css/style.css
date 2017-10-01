@@ -301,6 +301,9 @@ footer span:hover {
    footer nav     {
     display: none;
   }
+   body {
+    background-color: white;
+  }
   .phone {
     display: flex;
     width: 100%;
@@ -361,6 +364,10 @@ footer span:hover {
     flex-direction: column;
     width: 100%;
     margin: 16px 0 16px 0;
+    border: 2px solid #394053;
+  }
+    #about-us .side-box:hover {
+      background-color: #CEDFD9;
   }
 #about-us img:nth-child(2n+0),
   #about-us .img-box,
@@ -373,7 +380,7 @@ footer span:hover {
     margin: 15px 0 0 8px;
   }
   #programs .p-box-container {    /*  targeting ".programs" section  */
-    margin: 8px 0 16px 0;;
+    margin: 8px 0 16px 0;
     width: 100%;
   }
   #programs .p-box {
